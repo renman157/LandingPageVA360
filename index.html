@@ -30,38 +30,52 @@
       object-fit: contain;
     }
 
+    /* --- HERO SECTION BARU --- */
     .hero {
-      background: url('assets/img/hero-illustration.png') center/cover no-repeat;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
-      text-align: center;
-      padding: 100px 20px;
+      justify-content: center;
+      gap: 40px;
+      padding: 80px 40px;
       min-height: 90vh;
+      background-color: #8fd3ff;
+      flex-wrap: wrap;
+    }
+
+    .hero-illustration {
+      flex: 1 1 400px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-illustration img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
     }
 
     .hero-content {
+      flex: 1 1 400px;
       background: rgba(255, 255, 255, 0.75);
       padding: 30px 40px;
       border-radius: 16px;
-      max-width: 800px;
       box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      text-align: left;
     }
 
-    .hero h1 {
+    .hero-content h1 {
       font-size: 1.8rem;
       margin-bottom: 16px;
       font-weight: 700;
     }
 
-    .hero p {
+    .hero-content p {
       font-size: 1rem;
       color: #05587b;
       margin-bottom: 20px;
     }
 
-    .hero a button {
+    .hero-content a button {
       background-color: #d71c1c;
       border: none;
       color: #fff;
@@ -73,7 +87,7 @@
       font-weight: 600;
     }
 
-    .hero a button:hover {
+    .hero-content a button:hover {
       background-color: #b51313;
       transform: translateY(-2px);
     }
@@ -104,26 +118,31 @@
       }
 
       .hero {
-        padding: 70px 15px;
-        background-size: cover;
+        flex-direction: column;
+        padding: 60px 20px;
+        text-align: center;
       }
 
       .hero-content {
-        max-width: 95%;
+        text-align: center;
         padding: 24px;
       }
 
-      .hero h1 {
+      .hero-content h1 {
         font-size: 1.3rem;
       }
 
-      .hero p {
+      .hero-content p {
         font-size: 0.9rem;
       }
 
-      .hero a button {
+      .hero-content a button {
         font-size: 0.9rem;
         padding: 12px 24px;
+      }
+
+      .hero-illustration img {
+        max-width: 90%;
       }
 
       .flowchart {
@@ -141,6 +160,9 @@
   </header>
 
   <section class="hero">
+    <div class="hero-illustration">
+      <img src="assets/img/hero-illustration.png" alt="Ilustrasi Virtual Assessment" />
+    </div>
     <div class="hero-content">
       <h1>VIRTUAL ASSESSMENT 360° UNTUK PROSES PENGADAAN TANAH DI LINGKUNGAN LAND OPERATION ZONA ROKAN</h1>
       <p>Klik tombol di bawah untuk membuka halaman Virtual Assessment interaktif.</p>
